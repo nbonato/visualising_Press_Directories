@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualising Press Directories</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Visualising the Press Directories dataset, a Living with Machines digital residency project by Nicolò Bonato"> 
+    <link rel="icon" type="icon" href="icon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Press and politics in the UK</h1>
+    <div class="year-selection">
+        <div class="range-wrap">
+            <input type="range" class="range">
+            <output class="bubble"></output>
+        </div>
+        <div id="year-select-value">
+            Slide the indicator on the left to select the year
+            <br>
+            Use the buttons on the right to choose the dataset to show
+        </div>
+        <div class="radio-selector">
+            <input type="radio" id="elections" name="display-dataset" value="Elections">
+            <label for="elections">Elections</label><br>
+            <input type="radio" id="press" name="display-dataset" value="Press" checked>
+            <label for="press">Press</label><br>
+        </div>
+
+
+    </div>
+
+
+    <div class="container">
+        <div id="info-box">
+            <p id="info-box-message">Click on any available county to see the data. If a county is grayed out, it means that there are no press information on it for that year, so try moving around the slider above.
+            <br>
+            <br>
+
+            This project was created by <a href="https://nbonato.com">Nicolò Bonato</a> for a <a href="https://www.turing.ac.uk/work-turing/living-machines-open-call-digital-residencies">digital residency sponsored by The Alan Turing Institute</a>.
+            <br>
+            <br>
+
+            The press data comes from the <a href="https://github.com/Living-with-machines/PressDirectories">Press Directories dataset</a> created by the <a href="https://livingwithmachines.ac.uk/">Living with Machines project</a>.
+            <br>
+            <br>
+
+            The electoral data comes from the <a href="https://electiondataarchive.org/">CLEA project at the University of Michigan</a>.
+            This project made use of geographic data provided by the Historic County Borders Project.<br>
+            <br>
+
+            All code is available on GitHub on the <a href="https://github.com/Living-with-machines/VisualisingPressDirectories">Visualising Press Directories</a> repository.
+            </p>
+        </div>
+       
+        <div>
+            <h3 id="legend-title">Press leanings</h3>
+            <div class="colour-scheme-legend" id="legendDiv">
+            
+            </div>
+        </div>
+
+        <div id="map">
+            <button id="reset-button">Reset zoom</button>
+        </div>
+        
+    </div>
+
+</body>
+</html>
