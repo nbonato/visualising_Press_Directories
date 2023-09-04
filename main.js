@@ -332,8 +332,8 @@ function fetchJSON(url) {
 
 // Fetch both JSON files and store them
 Promise.all([
-    fetchJSON('scripts/elections.json'),
-    fetchJSON('press_data.json'),
+    fetchJSON('output/elections.json'),
+    fetchJSON('output/press_data.json'),
     fetchJSON('updated_map.json')
 ])  
 .then(([elections, pressDirectories, mapJson]) => {
