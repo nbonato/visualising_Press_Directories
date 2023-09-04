@@ -17,4 +17,8 @@ If you want to run your own version of this, or create an alternative one, you s
 2. Open the two "cleaning pipeline" Jupyter notebooks and download the source files indicated there
 3. Use the notebooks to clean the two input files
 4. Use the Json_creator notebook to export the two JSON files you need for the app to work
-5. Open the `index.html` file or host it wherever and you should see the app working 
+5. Open the `index.html` file or host it wherever and you should see the app working
+
+## Learn more about the process
+This repository contains only the last few commits to the project. 
+If you want to sift through all the commit history for this project, you can do so on my original repository at [github.com/nbonato/turing](https://github.com/nbonato/turing).
