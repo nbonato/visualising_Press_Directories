@@ -1,7 +1,7 @@
 # Visualising Press Directories
 
 ## What this is about
-This repository contains the code for the final output of my Digital Residency with the Living with Machines project, a web app visualising the [Press Directories dataset](https://github.com/Living-with-machines/PressDirectories). The link to the app is: 
+This repository contains the code for the final output of my Digital Residency with the Living with Machines project, a web app visualising the [Press Directories dataset](https://github.com/Living-with-machines/PressDirectories). The link to the app is: [https://living-with-machines.github.io/VisualisingPressDirectories/](https://living-with-machines.github.io/VisualisingPressDirectories/)
 
 If you want to re-create this project, the file structure of this repository is the one to follow. The `input` and `pickles` folder are not here because they would just contain data present elsewhere, so they should be created. The former has to be populated with the data from the [Press Directories dataset](https://github.com/Living-with-machines/PressDirectories) and the [CLEA project](https://electiondataarchive.org/), while the latter is automatically populated by the cleaning processes listed in the [relevant Jupyter notebooks](https://github.com/nbonato/visualising_Press_Directories/tree/main/Jupyter%20notebooks).
 
