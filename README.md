@@ -1,5 +1,5 @@
 # Visualising Press Directories
-
+![Screenshot of the functioning web app showing all components](/screenshot.png)
 ## What this is about
 This repository contains the code for the final output of my Digital Residency with the Living with Machines project, a web app visualising the [Press Directories dataset](https://github.com/Living-with-machines/PressDirectories). The link to the app is: [https://living-with-machines.github.io/VisualisingPressDirectories/](https://living-with-machines.github.io/VisualisingPressDirectories/)
 
